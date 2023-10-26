@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite parallel="none" name="Facebook - UI Automation">
+<parameter name = "url" value = "https://www.facebook.com/"/>
+
+<listeners>
+      <listener class-name="commons.MethodListener"/>
+      <listener class-name="reportConfig.AllureTestListener"/>
+</listeners>
+
+<test name="Run on Chrome">
+  	<parameter name = "browser" value = "chrome"/>
+ 	<classes>
+      <class name="com.facebook.home.Level_20_Element_Undisplayed"/>
+    </classes>
+</test>
+</suite>
