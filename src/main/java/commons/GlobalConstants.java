@@ -27,4 +27,8 @@ public class GlobalConstants {
 	public static final String DOWNLOAD_PATH = RELATIVE_PROJECT_PATH + File.separator + "downloadFiles" + File.separator;
 	public static final String JAVA_VERSION = System.getProperty("java.version");
 	
+	
+	public static void main(String[] args) {
+		System.out.println(DATA_PATH);
+	}
 }
